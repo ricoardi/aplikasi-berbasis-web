@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Design</title>
+    <style>
+        /* Color Variables */
+        :root {
+            --slate: #626D71;
+            --ceramic: #CDCDC0;
+            --white: #FFFFFF;
+            --off-white: #F8F8F6;
+            --text-dark: #333333;
+            --border-light: #E0E0D8;
+        }
+
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: var(--white);
+            color: var(--text-dark);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--slate);
+            color: var(--white);
+            padding: 1.5rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        /* Main Layout */
+        .container {
+            display: flex;
+            min-height: calc(100vh - 120px);
+        }
+
+        /* Sidebar - Off White Version */
+        .sidebar {
+            width: 240px;
+            background-color: var(--off-white);
+            padding: 2rem 0;
+            border-right: 1px solid var(--border-light);
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+        }
+
+        .sidebar nav ul li {
+            margin-bottom: 4px;
+            padding: 0 1.5rem;
+        }
+
+        .sidebar nav ul li a {
+            color: var(--text-dark);
+            text-decoration: none;
+            display: block;
+            padding: 0.8rem 1rem;
+            font-weight: 500;
+            font-size: 0.95rem;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .sidebar nav ul li a:hover {
+            background-color: rgba(98, 109, 113, 0.05);
+            border-left: 3px solid var(--slate);
+            color: var(--slate);
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 2.5rem;
+            background-color: var(--white);
+        }
+
+        .main-content h1 {
+            color: var(--slate);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--ceramic);
+            font-weight: 500;
+        }
+
+        .main-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 1.75rem 0;
+            display: block;
+            border: 1px solid var(--ceramic);
+            padding: 4px;
+        }
+
+        /* Form Styles */
+        .form-container {
+            max-width: 600px;
+            margin-top: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.6rem;
+            color: var(--slate);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            border: 1px solid var(--ceramic);
+            background-color: var(--white);
+            font-family: inherit;
+            border-radius: 4px;
+        }
+
+        .form-group textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: var(--slate);
+            color: var(--white);
+            border: none;
+            padding: 0.9rem 1.8rem;
+            cursor: pointer;
+            font-weight: 500;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #535D60;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--slate);
+            color: var(--ceramic);
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minimalist Design</h1>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Profil Perusahaan</a></li>
+                    <li><a href="#">Produk & Layanan</a></li>
+                    <li><a href="#">Portofolio</a></li>
+                    <li><a href="#">Hubungi Kami</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Karir</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="main-content">
+            <h1>Selamat Datang di Website Kami</h1>
+            
+            <img src="https://via.placeholder.com/800x400/626D71/CDCDC0?text=Contoh+Gambar" alt="Contoh Gambar">
+            
+            <p>Desain minimalis ini menggunakan kombinasi warna slate (#626D71) dan ceramic (#CDCDC0) untuk menciptakan tampilan yang bersih dan profesional.</p>
+            
+            <div class="form-container">
+                <form>
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" placeholder="Masukkan nama Anda">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Alamat Email</label>
+                        <input type="email" id="email" placeholder="alamat@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pesan">Pesan Anda</label>
+                        <textarea id="pesan" placeholder="Tulis pesan Anda disini..."></textarea>
+                    </div>
+                    
+                    <button type="submit">Kirim Pesan</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Perusahaan Contoh. Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</html>

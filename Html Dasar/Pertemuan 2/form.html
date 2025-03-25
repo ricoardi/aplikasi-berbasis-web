@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        
+        .label {
+            width: 40%;
+        }
+        .input {
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Formulir Tiket</h2>
+
+    <form style="width: 80%;">
+        <table style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td><label class="label">Nomor Registrasi</label></td>
+                    <td><input class="input" type="text" placeholder="Masukkan Nomor Registrasi Anda ..."></td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <label class="label">Nama</label>
+                    </td>
+                    <td>
+                        <input class="input" type="text" size="40" placeholder="Masukkan Nama Anda ...">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <label class="label">Jenis Kelamin</label><br>
+                    </td>
+                    <td>
+                        <input type="radio" name="jenis_kelamin" value="Laki-laki"> 
+                        <label>Laki-laki</label><br>
+                        <input type="radio" name="jenis_kelamin" value="Perempuan"> 
+                        <label>Perempuan</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Stasiun Asal</label>
+                    </td>
+                    <td>
+                        <select name="stasiun_asal" id="stasiun_asal">
+                            <option value="Kertapati">Kertapati</option>
+                            <option value="Prabumulih">Prabumulih</option>
+                            <option value="Baturaja">Baturaja</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="label">Makan Siang</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="jenis" value="Bakso"> 
+                        <label>Bakso</label><br>
+                        <input type="checkbox" name="jenis" value="Mie Ayam"> 
+                        <label>Mie Ayam</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Alamat</label><br>
+                    </td>
+                    <td>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+            </tbody>    
+        </table>
+        
+
+        
+        
+
+        
+    </form>
+</body>
+</html>
