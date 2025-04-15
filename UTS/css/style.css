@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+.logo-container {
+    color: #000;
+    display: flex;
+    align-items: center;
+    background-color: #F5F5DC;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 3%;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    margin-right: 15px;
+}
+
+header h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+nav {
+    background-color: #000000;
+    padding-left: 3%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* div {
+    
+} */
+
+div h1 {
+    color: #556B2F;
+}
+
+.welcome {
+    color: green;
+    font-weight: bold;
+}
+
+.desc {
+    font-size: 14px;
+    color: #333;
+    padding-left: 5%;
+    padding-top: 5px;
+    padding-right: 5%;
+    padding-bottom: 5px;
+}
+
+/* Buku  */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: #f8f6dc;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    border: 5px solid #ffffff;
+}
+
+td {
+    padding: 10px;
+    border: 5px solid #ffffff;
+    vertical-align: top;
+    background-color: #f0f9ff;
+}
+
+.image-table {
+    height: 150px;
+}
+
+/* kontak */
+
+label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    width: 50%;
+}
+
+textarea {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    width: 50%;
+}
+
+.btn-submit {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: darkgreen;
+}
