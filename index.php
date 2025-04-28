@@ -2,7 +2,8 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>File Manager</title>
+    <link rel="icon" type="image/png" href="r.png">
+    <title>Rico</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -57,8 +58,68 @@
             color: #0073aa;
         }
     </style>
+    <style>
+    .header {
+        background-color: #e0f7fa;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        color: #006064;
+    }
+    .header h1 {
+        margin: 0;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .header p {
+        margin: 5px 0 0;
+        font-size: 16px;
+    }
+    .footer {
+        margin-top: 40px;
+        padding: 15px;
+        text-align: center;
+        background-color: #eceff1;
+        color: #607d8b;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+</style>
+<style>
+    .github-button {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #eceff1;
+        color: #006064;
+        border: 1px solid #b0bec5;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s, color 0.3s;
+        font-size: 14px;
+    }
+    .github-button:hover {
+        background-color: #cfd8dc;
+        color: #004d40;
+    }
+    .github-icon {
+        margin-right: 8px;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+</style>
+
 </head>
 <body>
+<header class="header">
+    <h1>📂 File Manager - Aplikasi Berbasis Web</h1>
+    <p>Nama: <strong>Rico Ardi Saputra</strong> | NIM: <strong>202421021P</strong></p>
+    <a class="github-button" href="https://github.com/ricoardi/aplikasi-berbasis-web" target="_blank">
+        <span class="github-icon">🐙</span> Lihat di GitHub
+    </a>
+</header>
 <?php
 $baseDir = realpath(__DIR__);
 $currentDir = isset($_GET['dir']) ? realpath($_GET['dir']) : $baseDir;
@@ -170,5 +231,8 @@ usort($data, function($a, $b) use ($sort, $order) {
         </tr>
     <?php endforeach; ?>
 </table>
+<footer class="footer">
+    <p>© 2025 Rico Ardi Saputra - All Rights Reserved.</p>
+</footer>
 </body>
 </html>
