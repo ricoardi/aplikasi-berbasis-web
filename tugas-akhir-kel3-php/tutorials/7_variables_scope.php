@@ -14,6 +14,7 @@ myTest();
 echo "<p>Variable x outside function is: $x</p>";
 ?>
 
+<hr>
 <h5>Local Scope</h5>
 <?php
 function myTest2() {
@@ -25,6 +26,8 @@ myTest2();
 // using x outside the function will generate an error
 echo "<p>Variable x outside function is: $x</p>";
 ?>
+
+<hr>
 <h5>PHP The global Keyword</h5>
 <?php
 $x = 5;
@@ -38,6 +41,8 @@ function myTest3() {
 myTest3();  // run function
 echo $y; // output the new value for variable $y
 ?>
+
+<hr>
 <h5>Contoh di atas dapat ditulis ulang seperti ini:</h5>
 <?php
 $x = 5;
@@ -50,6 +55,8 @@ function myTest4() {
 myTest4();
 echo $y;
 ?>
+
+<hr>
 <h5>Static Keyword</h5>
 <?php
 function myTest5() {

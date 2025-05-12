@@ -9,7 +9,7 @@
 <?php
 echo "Hello World!";
 ?>
-
+<hr>
 <h5>Case Sensitivity</h5>
 <p>In PHP, keywords (e.g. if, else, while, echo, etc.), classes, functions, and user-defined functions are not case-sensitive.</p>
 <p>ex : ECHO, echo,EcHo</p>
@@ -18,6 +18,7 @@ ECHO "Hello World!<br>";
 echo "Hello World!<br>";
 EcHo "Hello World!<br>";
 ?>
+<hr>
 
 <h5>Case Sensitivity Variable</h5>
 <p>ex: $color,$COLOR,$coLOR are treated as three different variables</p>

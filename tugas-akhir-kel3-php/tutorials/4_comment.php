@@ -11,6 +11,7 @@
 /* This is a
 multi-line comment */
 ?>
+<hr>
 <h5>single line comment</h5>
 <?php
 // Outputs a welcome message:
@@ -19,6 +20,7 @@ echo "Welcome Home!";
 <?php
 echo "Welcome Home!"; // Outputs a welcome message
 ?>
+<hr>
 <h5>Ignore Code</h5>
 <?php 
 // echo "Welcome Home!";

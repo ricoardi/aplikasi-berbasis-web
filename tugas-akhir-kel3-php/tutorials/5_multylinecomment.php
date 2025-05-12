@@ -10,6 +10,7 @@ print a welcome message
 echo "Welcome Home!";
 ?>
 
+<hr>
 <h5>Multi-line Comments to Ignore Code</h5>
 <?php
 /*
@@ -18,6 +19,7 @@ echo "Mi casa su casa!";
 */
 echo "Hello!";
 ?>
+<hr>
 <h5>Comments in the Middle of the Code</h5>
 <?php
 $x = 5 /* + 15 */ + 5;
